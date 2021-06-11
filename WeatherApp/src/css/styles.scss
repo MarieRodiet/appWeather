@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
+$mint: #adefd1ff;
+$dark-blue: #00203fff;
+$white: #ffffff;
+
+* {
+  padding: 0;
+  margin: 0;
+  /*border-box tells the browser to account for any border and padding 
+  in the values you specify for an element's width and height. 
+  If you set an element's width to 100 pixels, that 100 pixels will 
+  include any border or padding you added, and the content box will 
+  shrink to absorb that extra width*/
+  box-sizing: border-box;
+}
+
+body {
+  background: $mint;
+  padding: 30px;
+  font-family: "Roboto", sans-serif;
+
+  p {
+    font-size: 2.5vmin;
+  }
+}
+
+/*form styling starts*/
+.zip-form {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0 30px 0;
+}
+
+form {
+  padding: 20px;
+  border: 2px solid $dark-blue;
+  border-radius: 5px;
+  background-color: $white;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+form div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.zip-form label {
+  margin-top: 7px;
+  color: $dark-blue;
+  font-size: 2.5vmin;
+}
+
+.zip-form input {
+  width: 20%;
+  min-width: 68px;
+  margin: 0 10px;
+  font-size: 15px;
+  font-weight: lighter;
+  box-shadow: 0 0 2px $mint;
+}
+
+form button {
+  font-size: 2.5vmin;
+  color: $white;
+  background-color: $dark-blue;
+  padding: 7px 10px;
+  border-radius: 5px;
+  transition-duration: 0.4s;
+}
+
+form button:hover {
+  background-color: $mint;
+  color: $white;
+}
+
+.alert {
+  color: $dark-blue;
+  background-color: $white;
+  border-color: $mint;
+}
+
+@media only screen and (max-width: 375px) {
+  form {
+    width: 70%;
+  }
+}
+/*if width smaller than 850 px, label and input in one row, button below */
+@media only screen and (max-width: 800px) {
+  .zip-form label {
+    font-size: 15px;
+    white-space: nowrap;
+  }
+
+  form button {
+    margin: 10px;
+  }
+}
+/*form styling ends*/
+
+/* weather-list styling starts */
+#weather-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.weather-list-item {
+  color: $dark-blue;
+  border: 2px solid $dark-blue;
+  background-color: $white;
+  max-width: 150px;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+/*weather-list styling ends */
+
+/*current-day styling starts */
+
+#currentDayWrapper {
+  padding: 25px;
+  padding-top: 0;
+  border-radius: 5px;
+  background-color: $white;
+  border: 2px solid $dark-blue;
+  display: flex;
+  flex-direction: column;
+
+  h1 {
+    padding-left: 30px;
+    color: $dark-blue;
+    font-size: 4vh;
+    text-align: center;
+  }
+}
+
+.currentDayContent {
+  display: flex;
+  width: 100%;
+}
+
+.weather {
+  padding: 20px 0 20px 0;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  p {
+    margin: 0;
+    font-size: 3vmin;
+    padding: 10px 0 10px 0;
+    color: $dark-blue;
+  }
+
+  img {
+    padding: 10px 0 10px 0;
+  }
+}
+
+.details {
+  padding: 20px 0 20px 0;
+  width: 50%;
+
+  p {
+    color: $dark-blue;
+  }
+}
+
+/*current-day styling ends*/
