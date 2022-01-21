@@ -75,7 +75,7 @@ const geocodeUrl = "https://maps.googleapis.com/maps/api/geocode/json?address=";
 
 // returns a promise of api data
 export default async function (zipcode) {
-   let response = await fetch(`${geocodeUrl}${zipcode}&region=us&key=${apiKey}`);
+   let response = await fetch(`${geocodeUrl}${zipcode}&region=fr&key=${apiKey}`);
    if (!response.ok)
       throw new Error(`googleMaps' API call failed. ${response.status}`);
    else

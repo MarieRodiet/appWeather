@@ -150,7 +150,6 @@ class Weather {
 
       </div>
       <div class="details">
-        <div>
           <span>Morning Temperature: ${day.mornTemp} &deg;F</span><br>
           <span>Day Temperature: ${day.dayTemp} &deg;F</span><br>
           <span>Evening Temperature: ${day.eveTemp} &deg;F</span><br>
@@ -158,7 +157,6 @@ class Weather {
           <span>Atmospheric Pressure: ${day._pressure} hPa</span><br>
           <span>Humidity: ${day._huminity}%</span><br>
           <span>Wind Speed: ${day.windSpeed} mph</span>
-        </div>
       </div>
       </div>
       </div>`;

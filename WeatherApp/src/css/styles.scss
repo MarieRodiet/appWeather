@@ -135,7 +135,6 @@ form button:hover {
   flex-direction: column;
 
   h1 {
-    padding-left: 30px;
     color: $dark-blue;
     font-size: 4vh;
     text-align: center;
@@ -170,9 +169,31 @@ form button:hover {
 .details {
   padding: 20px 0 20px 0;
   width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
-  p {
+  span {
     color: $dark-blue;
+    display: inline-block;
+  }
+}
+@media only screen and (max-width: 530px) {
+  #currentDayWrapper {
+    padding: 10px;
+  }
+  .currentDayContent {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .weather {
+    flex-direction: row;
+  }
+
+  .details {
+    display: flex;
+    flex-direction: column;
   }
 }
 
