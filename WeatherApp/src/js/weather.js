@@ -125,7 +125,7 @@ class Weather {
     }
   }
 
-  renderWeatherListItem(forecastDay, index) {
+  renderWeatherListItem(forecastDay) {
     return `<div class="weather-list-item">
           <span>${forecastDay.shortDate}</span><br>
           <span>${forecastDay.weekDay}</span><br>
